@@ -15,21 +15,23 @@ import training.taylor.timetracker.core.dao.TimeEntry;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = TrackerCoreConfig.class)
 public class TrackerTest {
-    @Autowired
-    private Tracker tracker;
 
-    @Test
-    public void testMe() {
-        assertNotNull(tracker);
-    }
+	@Autowired
+	private Tracker tracker;
 
-    @Test
-    public void testAdd() {
-        TimeEntry entry = new TimeEntry();
-        entry.setDescription("Entry Test");
-        entry.setRate(80.0f);
-        entry.setTime(3);
-        tracker.add(entry);
-        assertTrue(tracker.size() > 0);
-    }
+	@Test
+	public void testMe() {
+		assertNotNull(tracker);
+	}
+
+	@Test
+	public void testAdd() {
+		TimeEntry entry = new TimeEntry();
+		entry.setDescription("Entry Test");
+		entry.setRate(80.0f);
+		entry.setTime(3);
+		tracker.add(entry);
+		assertTrue(tracker.size() > 0);
+	}
+
 }

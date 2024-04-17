@@ -9,40 +9,40 @@ import org.springframework.stereotype.Component;
 @Component
 @Scope("prototype")
 public class TimeEntry {
-    private String description;
-    private float rate;
-    private int time;
 
-    public String getDescription() {
-        return description;
-    }
+	private String description;
 
-    public void setDescription(String value) {
-        this.description = value;
-    }
+	private float rate;
 
-    public float getRate() {
-        return rate;
-    }
+	private int time;
 
-    public void setRate(float value) {
-        this.rate = value;
-    }
+	public String getDescription() {
+		return description;
+	}
 
-    public int getTime() {
-        return time;
-    }
+	public void setDescription(String value) {
+		this.description = value;
+	}
 
-    public void setTime(int value) {
-        this.time = value;
-    }
+	public float getRate() {
+		return rate;
+	}
 
-    @Override
-    public String toString() {
-        return "TimeEntry{" +
-                "description='" + description + '\'' +
-                ", rate=" + rate +
-                ", time=" + time +
-                '}';
-    }
+	public void setRate(float value) {
+		this.rate = value;
+	}
+
+	public int getTime() {
+		return time;
+	}
+
+	public void setTime(int value) {
+		this.time = value;
+	}
+
+	@Override
+	public String toString() {
+		return "TimeEntry{" + "description='" + description + '\'' + ", rate=" + rate + ", time=" + time + '}';
+	}
+
 }

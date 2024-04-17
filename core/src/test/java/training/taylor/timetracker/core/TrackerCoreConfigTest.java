@@ -18,12 +18,12 @@ import java.util.List;
 @ContextConfiguration(classes = TrackerCoreConfig.class)
 public class TrackerCoreConfigTest {
 
-    @Autowired
-    List<TimeEntry> entries;
+	@Autowired
+	List<TimeEntry> entries;
 
-    @Test
-    public void testMe() {
-        assertNotNull(entries);
-    }
+	@Test
+	public void testMe() {
+		assertNotNull(entries);
+	}
 
 }
